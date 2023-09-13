@@ -8,7 +8,7 @@ android {
         applicationId 'com.tencent.liteav.tuiliveroom'
         versionName "1.0"
         versionCode 1
-        minSdkVersion 19
+        minSdkVersion 26
         targetSdkVersion 26
         multiDexEnabled true
     }

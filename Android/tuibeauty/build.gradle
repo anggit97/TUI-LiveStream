@@ -5,7 +5,7 @@ android {
     buildToolsVersion "28.0.3"
 
     defaultConfig {
-        minSdkVersion 19
+        minSdkVersion 26
         targetSdkVersion 26
     }
 
@@ -25,6 +25,6 @@ dependencies {
     api "com.google.code.gson:gson:2.8.6"
 
     def projects = this.rootProject.getAllprojects().stream().map { project -> project.name }.collect()
-    api projects.contains("tuicore") ? project(':tuicore') : "com.tencent.liteav.tuikit:tuicore:latest.release"
+    api projects.contains("tuicore") ? project(':tuicore') : "com.tencent.liteav.tuikit:tuicore:7.4.4648"
     api rootProject.getProperties().containsKey("liteavSdk") ? rootProject.ext.liteavSdk : "com.tencent.liteav:LiteAVSDK_TRTC:latest.release"
 }

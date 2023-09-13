@@ -45,7 +45,7 @@ public class GenerateTestUserSig {
      * You can view your `SDKAppId` after creating an application in the [Tencent Cloud IM console](https://console.cloud.tencent.com/avc).
      * SDKAppID uniquely identifies a Tencent Cloud account.
      */
-    public static final int SDKAPPID = PLACEHOLDER;
+    public static final int SDKAPPID = 20003946;
 
 
     /**
@@ -62,7 +62,7 @@ public class GenerateTestUserSig {
      * key: url_push         Gets the RTMP push address
      * key: url_play_flv     Gets the FLV playback address
      */
-    public static final String URL_FETCH_PUSH_URL = "PLACEHOLDER";
+    public static final String URL_FETCH_PUSH_URL = "rtmp://188810.push.tlivecloud.com/Live Stream RnD/StreamName?txSecret=md5(key+StreamName+hex(time))&txTime=hex(time)";
 
     /**
      * Follow the steps below to obtain the key required for UserSig calculation.
@@ -77,7 +77,7 @@ public class GenerateTestUserSig {
      * to prevent key disclosure and traffic stealing.
      * Documentation: https://cloud.tencent.com/document/product/269/32688#Server
      */
-    private static final String SECRETKEY = "PLACEHOLDER";
+    private static final String SECRETKEY = "4dfa4a3021ef2361339d977fe92e3ebe15db08fdb5a04c9548c4ec5e37396d20";
 
 
     /**
@@ -104,7 +104,7 @@ public class GenerateTestUserSig {
      * License Management View (https://console.cloud.tencent.com/live/license)
      * License URL of your application
      */
-    public static final String LICENSEURL = "请替换成您的licenseURL";
+    public static final String LICENSEURL = "https://license.vod-control.com/license/v2/1316940742_1/v_cube.license";
 
     /**
      * 腾讯云直播license管理页面(https://console.cloud.tencent.com/live/license)
@@ -113,7 +113,7 @@ public class GenerateTestUserSig {
      * License Management View (https://console.cloud.tencent.com/live/license)
      * License key of your application
      */
-    public static final String LICENSEURLKEY = "请替换成您的licenseKey";
+    public static final String LICENSEURLKEY = "7e83f0cac294d0b9f53a23c96b36c388";
 
     /**
      * 配置的后台服务域名，类似：https://service-3vscss6c-xxxxxxxxxxx.gz.apigw.tencentcs.com"

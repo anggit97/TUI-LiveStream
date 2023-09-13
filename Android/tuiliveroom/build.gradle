@@ -5,7 +5,7 @@ android {
     buildToolsVersion "28.0.3"
 
     defaultConfig {
-        minSdkVersion 19
+        minSdkVersion 26
         targetSdkVersion 26
     }
 
@@ -13,6 +13,13 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    android {
+        compileOptions {
+            sourceCompatibility 1.8
+            targetCompatibility 1.8
         }
     }
 }
@@ -39,6 +46,6 @@ dependencies {
     api project(':tuiaudioeffect')
     api project(':tuigift')
     api project(':tuibarrage')
-    api 'com.tencent.liteav.tuikit:tuicore:latest.release'
+    api 'com.tencent.liteav.tuikit:tuicore:7.4.4648'
     api project(':debug')
 }
